@@ -1,0 +1,23 @@
+<div>
+    <h1>Inicio de sesión</h1>
+    <form action="/api/session/login" method="POST">
+        <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div id="submit">
+            <button type="submit">Iniciar sesión</button>
+        </div>
+        <div id="passportSessions">
+            <p>También puedes iniciar sesión con:</p>
+            <a href="/api/session/github"><img src="../img/github.png" alt="Github" id="githubPassport" class="passportImages"></a>
+        </div>
+    </form>
+    <div>
+        <a href="/signup" id="signup">Registrarse</a>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="main">
+    <div class="products" id="Productos">
+        {{#each products}}
+        <div class="product">
+            <h2>{{this.title}}</h2>
+            <p>{{this.description}}</p>
+            <p>{{this.code}}</p>
+            <p>{{this.price}}</p>
+            <p>{{this.status}}</p>
+            <p>{{this.stock}}</p>
+            <p>{{this.category}}</p>
+            <img src="{{this.thumbnail}}" alt="{{title}}">
+        </div>
+        {{/each}}
+    </div>
+    <div class="form">
+        <form id="formProduct">
+            <label for="title">title</label>
+            <input type="text" name="title" placeholder="Nombre">
+            <label for="description">description</label>
+            <input type="text" name="description" placeholder="Descripción">
+            <label for="code">code</label>
+            <input type="text" name="code" placeholder="Código">
+            <label for="price">price</label>
+            <input type="number" name="price" placeholder="Precio">
+            <label for="status">status</label>
+            <select id="status" name="status">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+            <label for="stock">stock</label>
+            <input type="number" name="stock" placeholder="Stock">
+            <label for="category">category</label>
+            <input type="text" name="category" placeholder="Categoría">
+            <label for="thumbnail">thumbnail</label>
+            <input type="text" name="thumbnail" placeholder="Imagen">
+            <div>
+                <button type="submit" id="BotonAgregar">Agregar</button>
+            </div>
+        </form>
+    </div>
+
+</div>

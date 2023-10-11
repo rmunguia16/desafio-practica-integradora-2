@@ -1,0 +1,50 @@
+.nav {
+    grid-row: 1/2;  
+    background-color: #68beaf;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para el título "Header" */
+.nav h3 {
+    margin: 0;
+    /* Eliminar márgenes predeterminados */
+}
+
+/* Estilo para la lista de enlaces */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Estilo para los elementos de la lista de enlaces */
+li {
+    margin-right: 20px;
+    float: left;
+    /* Espaciado entre elementos de la lista */
+}
+
+/* Estilo para los enlaces en la lista */
+a {
+    text-decoration: none;
+    /* Eliminar subrayado de los enlaces */
+    color: white;
+    /* Color del texto de los enlaces */
+}
+
+/* Estilo para el contenedor de información del usuario */
+#userInfo {
+    text-align: right;
+    /* Alinear el texto a la derecha */
+}
+
+/* Estilo para el nombre del usuario */
+#userInfo p {
+    margin: 0;
+    /* Eliminar márgenes predeterminados */
+}

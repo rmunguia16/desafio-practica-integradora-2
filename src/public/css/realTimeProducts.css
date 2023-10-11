@@ -1,0 +1,117 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+.container{
+    min-height: 95%;
+    display: grid;/* 
+    grid-template-rows: 1fr 8fr 1fr; */
+}
+
+.main {
+    grid-row: 2/10;
+    display: flex;
+    flex-wrap: wrap;
+    /*position: absolute;
+    top: 50%;*/
+    justify-content: center;
+    align-content: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    grid-row: 10/11;
+    width: 98vw;
+    border: 0.5rem;
+    border-style: dashed;
+    border-color: #04AA6D;
+}
+
+.products{
+    overflow-y:scroll;
+    max-height: 60vh;
+    max-width: 49%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.product{
+    display: flex;
+    padding: 1rem,0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #04AA6D;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product:first-of-type{
+    margin-top: 10px;
+}
+
+.form{
+    max-height: 60vh;
+    width: 50%;
+    overflow-y:scroll;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+
+label,
+input{
+    display: block;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+::placeholder{
+    padding-left: 5px;
+}
+
+.field{
+    margin: 10px;
+    display: flex;
+    justify-content:left;
+}
+
+button {
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: #04AA6D !important;
+    color: white !important;
+    padding: 10px 20px;
+    border: none;
+    outline: 0;
+    width: 93px;
+    border-radius: 20px;    
+}
+
+form > div{
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
